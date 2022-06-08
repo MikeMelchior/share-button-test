@@ -7,12 +7,12 @@ shareButton.addEventListener('click', event => {
     if (navigator.share) {
       navigator.share({
         title: 'WebShare API Demo',
-        url: 'https://codepen.io/ayoisaiah/pen/YbNazJ'
+        url: 'https://github.com/rubberteeth'
       }).then(() => {
         console.log('Thanks for sharing!');
       })
       .catch(console.error);
     } else {
-      // fallback
+      alert('This feature is not supported')
     }
   });
