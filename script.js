@@ -6,7 +6,7 @@ shareButton = document.querySelector('#share-button')
 shareButton.addEventListener('click', event => {
     if (navigator.share) {
       navigator.share({
-        title: 'WebShare API Demo',
+        title: title,
         url: 'https://github.com/rubberteeth'
       }).then(() => {
         console.log('Thanks for sharing!');
